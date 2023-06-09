@@ -1,0 +1,243 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0px 2px 5px rgba(3,18,26,0.15);
+}
+.inforContainer{
+  margin-top: 1%;
+  margin-left: 7%;
+}
+.inforContainer span:first-child{
+  font-size: 30px;
+  font-weight: 700;
+}
+.inforContainer span:last-child{
+  font-size: 18px;
+  font-weight: 500;
+}
+.container-flud{
+  display: flex;
+  justify-content: space-around;
+  background-color:white;
+  height: 57px;
+  line-height: 52px;
+  border-top: 5px solid rgb(75, 75, 240);
+}
+.logo-item{
+  margin-left: 33%;
+}
+main{
+
+  padding-top: 100px;
+}
+.btnSignIn{
+  width: 100%;
+}
+.container-flud .logo{
+  margin-left: -8%;
+  width: 30%;
+  
+}
+.nav-item  button{
+  height: 40px;
+  width: 100px;
+  background-color: rgb(75, 75, 240);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  line-height: 30px;
+  margin-top: 5px;
+}
+.logo{
+  display: flex;
+}
+.logo-item img{
+  margin-right: 250px;
+}
+.logo .btn-primary img{
+  margin-left: 36%;
+}
+.logo button{
+  background-color: white;
+  border: none;
+}
+.nav-parent{
+  display: flex;
+  margin-right: 20px;
+}
+.nav-parent .nav-item{
+  padding-right: 40px;
+}
+.container-bar{
+  padding-left:4%;
+  background-color: #F2F3F3;
+  height: 43px;
+  margin: 0 auto;
+}
+.cBar{
+  padding-left: 30px;
+}
+.container-frud {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-top: 12%;
+}
+
+.inforContainer {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-item {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.card-item .row {
+  align-items: center;
+}
+
+.card-item img {
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.card-item .col-md-8 {
+  padding: 10px;
+}
+
+.card-item .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card-item .card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-item .card-text {
+  margin-bottom: 10px;
+}
+
+.card-item span {
+  display: block;
+}
+
+.card-item .btnSelect {
+  margin-top: auto;
+  background-color: rgb(75, 75, 240);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 20%;
+  margin-top: 5%;
+}
+
+.card-item .btnSelect:hover {
+  background-color: rgb(31, 31, 188);
+}
+.col-md-4{
+  height: 320px;
+  width: 299px;
+}
+.col-md-4 img{
+  width: 100%;
+}
+  /* Foot */
+  .foot{
+    margin-top: 3%;
+  }
+  .foot .find{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+  }
+  .find .become{
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .find .help{
+    font-size: 13px;
+  }
+  .find .linkk i {
+    width: 35px;
+    color: black;
+    background-color: white;
+    height: 35px;
+    border-radius: 50px;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  .foot .rights{
+    background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        font-size: 13px;
+  }
+  
+  
+  .guides{
+    width: 50%;
+    text-align: right;
+  }
+  .guides span{
+    margin-right: 20px;
+  }
+  
+  @media(min-width: 375px) and (max-width: 812px){
+    .nav-parent .nav-item{
+     display: none;
+   }
+   .nav-parent .nav-item .btnSignIn{
+     display: block 
+   }
+   .nav-parent .nav-item .btnLogIn{
+     display: block
+   }
+  .logo{
+   display: none;
+  }
+ .advertisement{
+   width: 100%;
+ }
+ .advertisement img{
+   width: 100%;
+ }
+ .advertisement h3 img{
+   display: none;
+ }
+ .container-bar ul li:first-child{
+   display: none;
+ }
+ .food .find .help{
+   padding-left: 10px;
+   padding-right: 10px;
+ }
+
+   }

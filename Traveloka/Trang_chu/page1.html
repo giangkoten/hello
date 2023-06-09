@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traveloka</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css
+    "
+    />
+    <link rel="stylesheet" href="./page1.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container-flud">
+        <div class="logo">
+          <button
+            class="btn btn-primary btn-logo"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#staticBackdrop"
+            aria-controls="staticBackdrop"
+          >
+            <img
+              src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/5/5391d86e5f4c5e92de04ef4461a09259.svg"
+              alt=""
+            />
+          </button>
+          <div class="logo-item">
+            <img
+              src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/9/97f3e7a54e9c6987283b78e016664776.svg"
+              alt=""
+            />
+          </div>
+
+          <div
+            class="offcanvas offcanvas-start"
+            data-bs-backdrop="static"
+            tabindex="-1"
+            id="staticBackdrop"
+            aria-labelledby="staticBackdropLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="staticBackdropLabel">
+                Offcanvas
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>I will not close if you click outside of me.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-parent">
+          <div class="nav-item">
+            <a class="nav-link" href="#"
+              ><img
+                src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/6/687f7095ed36a75c21cc52726d55b2c5.svg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="nav-item">
+            <a class="nav-link" href="#"
+              ><img
+                src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/6/687f7095ed36a75c21cc52726d55b2c5.svg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="nav-item">
+            <a class="nav-link" href="#"
+              ><img
+                src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/8/8c9954122d8006592fbcbd4a82ac994c.svg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="nav-item">
+            <a class="nav-link" href="#"
+              ><img
+                src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/a/a3478fc6e57b8681609c1458bd50cbb9.svg"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <div class="nav-item btnLogIn userName">
+            <a class="nav-link" href="#">
+              <i class="fa-regular fa-user"></i>
+              Đăng nhập
+            </a>
+          </div>
+
+          <div class="nav-item btnSignIn">
+            <button class="btn-signIn">Đăng ký</button>
+          </div>
+          <div class="nav-item">
+            <button class="btn-signOut">Đăng xuất</button>
+          </div>
+        </div>
+      </div>
+      <div class="container-bar">
+        <ul class="nav nav-pills">
+          <li class="nav-item dropdown cBar">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              role="button"
+              aria-expanded="false"
+              >Vận chuyển</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img
+                    src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/a/a4aeae89d08f4e113e770c9542bdcb3b.svg"
+                    alt=""
+                  />
+                  Vé máy bay</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img
+                    src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/5/5004b449835e496e36312d0412c5a76c.svg"
+                    alt=""
+                  />
+                  Combo tiết kiệm</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img
+                    src="	https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/1/1ebb1019a7bb6c0c828ab9f9c5ecdef8.svg"
+                    alt=""
+                  />
+                  Đưa đón sân bay</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img
+                    src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/9/980d3e585f45b396cae1ff47b9980340.svg"
+                    alt=""
+                  />
+                  Cho thuê xe</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img
+                    src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/a/ab24015021953d26fba1b97a32464c8e.svg"
+                    alt=""
+                  />
+                  Tình trạnh chuyến bay</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img
+                    src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/6/656d9f6953547ba93cf15954d7c6e220.svg"
+                    alt=""
+                  />
+                  Thông báo giá vé</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown cBar">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              role="button"
+              aria-expanded="false"
+              >Chỗ ở</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img
+                    src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/6/6aa2fd01a9460e1a71bb0efb713f0212.svg"
+                    alt=""
+                  />
+                  Khách sạn</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img
+                    src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/5/5004b449835e496e36312d0412c5a76c.svg"
+                    alt=""
+                  />
+                  Combo tiết kiệm</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown cBar">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              role="button"
+              aria-expanded="false"
+              >Hoạt động và giải trí</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img
+                    src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/a/a1499965ef30506d8df751cd6e62b0ff.svg"
+                    alt=""
+                  />
+                  Xperience</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img
+                    src="	https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/a/aa070231d1755863e9ed00c3437325ba.svg"
+                    alt=""
+                  />
+                  Attractions</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img
+                    src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/8/8dd693f393de9e4d0dd580fcef6804d4.svg"
+                    alt=""
+                  />
+                  Tours</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="container-introduce">
+        <div class="slider">
+          <div class="slide">
+            <img
+              src="https://ik.imagekit.io/tvlk/image/imageResource/2023/05/16/1684236049991-3dc1c778a06603a6146efebbab085535.jpeg?tr=h-230,q-75,w-472"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://ik.imagekit.io/tvlk/image/imageResource/2023/05/09/1683597779257-949eecfbb570151eb5ea6732ff646fd9.jpeg?tr=h-230,q-75,w-472"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://ik.imagekit.io/tvlk/image/imageResource/2023/05/16/1684235922871-d021203e6b9bed6fc2f1067659701c77.jpeg?tr=h-230,q-75,w-472"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://ik.imagekit.io/tvlk/image/imageResource/2023/05/17/1684304612008-e7739552eb523628f9287e2d75061bfd.jpeg?tr=h-230,q-75,w-472"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://ik.imagekit.io/tvlk/image/imageResource/2023/05/18/1684401155557-d75754452bf8df8f87014c03fa31c74b.jpeg?tr=h-230,q-75,w-472"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://ik.imagekit.io/tvlk/image/imageResource/2023/05/30/1685417417335-25d37757e9d6c9208a5b26d9b4d7b30c.png?tr=h-230,q-75,w-472"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="containerBook">
+        <div class="contentBook">
+          <h3>Bạn muốn trải nghiệm điều gì?</h3>
+          <p>
+            Khám phá các hoạt động và địa điểm thăm quan theo sở thích và gu du
+            lịch của bạn
+          </p>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Bạn muốn đi đâu"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <button
+              class="btnn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+            >
+              Tìm kiếm
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="global-book">
+        <h3>
+          <img
+            src="https://ik.imagekit.io/tvlk/image/imageResource/2023/05/18/1684407439584-fc271f40d150ba6e45d046100d64bd29.png?_src=imagekit&tr=q-40,h-24"
+            alt=""
+          />
+          Vi vu quốc tế dễ dàng!
+        </h3>
+        <div class="listGlobal">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://ik.imagekit.io/tvlk/mchitm/imageResource/template/264/vi_VN/2023/05/18/eecfecd2-2ecc-3193-8280-dd96dc781af2?tr=w-247"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                HN <i class="fa-solid fa-arrow-right"></i> Sydney
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://ik.imagekit.io/tvlk/mchitm/imageResource/template/264/vi_VN/2023/05/18/8ab8bbe4-f565-3fb5-aca5-cc82a0d4f75d?tr=w-247"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                HCM <i class="fa-solid fa-arrow-right"></i> Melbourne
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://ik.imagekit.io/tvlk/mchitm/imageResource/template/264/vi_VN/2023/05/18/2a111e3f-70b6-3e38-a6bd-8e0c602edacb?tr=w-247"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                HN <i class="fa-solid fa-arrow-right"></i> London
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://ik.imagekit.io/tvlk/mchitm/imageResource/template/264/vi_VN/2023/05/18/d75ed963-56d4-37c6-aa2b-34d8dec1e983?tr=w-247"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-text">
+                HCM <i class="fa-solid fa-arrow-right"></i> Lyon
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="advertisement">
+        <img
+          src="https://ik.imagekit.io/tvlk/image/imageResource/2023/05/17/1684295899961-858320ce10690ba8d391b7b087f6b25a.jpeg?tr=q-75,w-1280"
+          alt=""
+        />
+        <div class="sale">
+          <h3>
+            <img
+              src="https://ik.imagekit.io/tvlk/image/imageResource/2023/05/18/1684407439584-fc271f40d150ba6e45d046100d64bd29.png?_src=imagekit&tr=q-40,h-24"
+              alt=""
+            />
+            Sale sập sàn
+          </h3>
+          <img
+            src="https://ik.imagekit.io/tvlk/image/imageResource/2023/05/17/1684307837947-6849d954538e2bd35f39194d990c3762.png?tr=q-75,w-427"
+            alt=""
+          />
+          <img
+            src="https://ik.imagekit.io/tvlk/image/imageResource/2023/05/17/1684307831459-a48f6a6838cb4d9ca59a5abdb9a01f1f.png?tr=q-75,w-427"
+            alt=""
+          />
+          <img
+            src="https://ik.imagekit.io/tvlk/image/imageResource/2023/05/17/1684307843647-2a213e292afa4c530d6afa294f6d99cd.png?tr=q-75,w-427"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="container-trust">
+        <h3>Tại sao nên đặt chỗ với Traveloka?</h3>
+        <div class="trust">
+          <div class="trustChill">
+            <img
+              src="https://ik.imagekit.io/tvlk/image/imageResource/2017/05/17/1495008495760-d92160ea2b56fc1128cbdff93aa43774.png?tr=h-150,q-75,w-150"
+              alt=""
+            />
+            <h4>Giải pháp du lịch hoàn thiện</h4>
+            <p>
+              Giải pháp toàn diện - giúp bạn tìm chuyến bay và khách sạn khắp
+              Việt Nam và Đông Nam Á một cách tiết kiệm.
+            </p>
+          </div>
+          <div class="trustChill">
+            <img
+              src="https://ik.imagekit.io/tvlk/image/imageResource/2017/05/17/1495008504598-6c1d5675c41e47eee0b27c59c07a2bbd.png?tr=h-150,q-75,w-150"
+              alt=""
+            />
+            <h4>Giá rẻ mỗi ngày</h4>
+            <p>
+              Giá bạn thấy là giá bạn trả! Dễ dàng so sánh khi không cần phải
+              trả thêm chi phí ẩn!
+            </p>
+          </div>
+          <div class="trustChill">
+            <img
+              src="https://ik.imagekit.io/tvlk/image/imageResource/2017/05/17/1495008514239-c1d0a51538cd02053c9b1a6c567fe5b5.png?tr=h-150,q-75,w-150"
+              alt=""
+            />
+            <h4>Phương thức thanh toán an toàn và linh hoạt</h4>
+            <p>
+              Giao dịch trực tuyến an toàn với nhiều lựa chọn như thanh toán tại
+              cửa hàng tiện lợi, chuyển khoản ngân hàng, thẻ tín dụng đến
+              Internet Banking. Không tính phí giao dịch.
+            </p>
+          </div>
+          <div class="trustChill">
+            <img
+              src="https://ik.imagekit.io/tvlk/image/imageResource/2017/05/17/1495008521046-3cee046bb3ddb863398300f89d83c0f9.png?tr=h-150,q-75,w-150"
+              alt=""
+            />
+            <h4>Hỗ trợ khách hàng 24/7</h4>
+            <p>
+              Đội ngũ nhân viên hỗ trợ khách hàng luôn sẵn sàng giúp đỡ bạn
+              trong từng bước của quá trình đặt vé
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="overLay">
+        <div class="logIn">
+          <h2>Đăng nhập</h2>
+          <div class="errLogin">
+            <span>Lỗi thông tin tài khoản</span>
+          </div>
+          <form class="formlogin">
+            <div class="form-group">
+              <label for="username">Email đăng nhập :</label>
+              <input type="text" id="usermail" name="usermail" />
+            </div>
+            <div class="form-group">
+              <label for="password">password:</label>
+              <input type="password" id="password" name="password" />
+            </div>
+            <button type="submit" id="btnCorrect">Đăng nhập</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="foot">
+      <div class="find">
+        <div class="become">
+          <p>FIND A TRAVELOKA</p>
+          <p>BECOME A MENBER</p>
+          <p>Send Us Feedback</p>
+        </div>
+        <div class="help">
+          <p class="become">GET HELP</p>
+          <p>Order Status</p>
+          <p>Delivery</p>
+          <p>Returns</p>
+          <p>Payment Options</p>
+          <p>Contact Us</p>
+        </div>
+        <div class="help">
+          <p class="become">ABOUT Traveloka</p>
+          <p>News</p>
+          <p>Careers</p>
+          <p>Investors</p>
+          <p>Sustainability</p>
+        </div>
+        <div class="linkk">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      <div class="rights">
+        <p>© 2023 Travloka, Inc. All Rights Reserved</p>
+        <div class="guides">
+          <span>Guides </span>
+          <span>Terms of Sale </span>
+          <span>Terms of Use </span>
+          <span>Traveloka Privacy Policy </span>
+        </div>
+      </div>
+    </footer>
+    <div class="blockoverLay"></div>
+    <div class="overLaySingin"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js
+    "></script>
+    <script src="./page1.js"></script>
+  </body>
+</html>

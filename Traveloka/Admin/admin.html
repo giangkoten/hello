@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./admin.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="card-body">
+        <h3>Quản lý người dùng</h3>
+        <table>
+          <thead>
+            <tr>
+              <th class="id">Id</th>
+              <th class="email">email</th>
+              <th class="password">Password</th>
+              <th class="status">Status</th>
+              <th class="action" colspan="2" style="padding-left: 7%">
+                Action
+              </th>
+            </tr>
+          </thead>
+          <tbody class="tableListuser">
+            <!-- <td>1</td>
+            <td>giangkoten@gmail.com</td>
+            <td>Giang@123</td>
+            <td>Đã thanh toán</td>
+            <td>online</td>
+            <td><button>unlock</button></td>
+            <td><button>lock</button></td> -->
+          </tbody>
+        </table>
+      </div>
+      <div class="purchase">
+        <h3>
+          Trạng thái mua hàng
+          <!-- <button style="margin-left: 2%" class="btnEdit">Thanh toán</button> -->
+        </h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Khách hàng</th>
+              <th>Id oder</th>
+              <th>Tour</th>
+              <th>Ngày vào</th>
+              <th>Tiền tour</th>
+            </tr>
+          </thead>
+          <tbody class="purchaseMember">
+            <!-- <td>giang123@gmail.com</td>
+            <td>Title</td>
+            <td>Ngày vào</td>
+            <td>
+              <button>Thanh toán</button>
+            </td> -->
+          </tbody>
+        </table>
+      </div>
+      <div class="container">
+        <h3>Quản lý khách sạn</h3>
+
+        <h5>Thêm sản phẩm</h5>
+        <table>
+          <tr>
+            <td>Link ảnh</td>
+            <td>Tiêu đề</td>
+            <td>Nội dung</td>
+          </tr>
+          <tr>
+            <td><input type="text" placeholder="url... " class="link" /></td>
+            <td><input type="text" placeholder="Text" class="title" /></td>
+            <td><input type="text" placeholder="Text" class="content" /></td>
+            <td><button class="btnAdd">Thêm tour</button></td>
+          </tr>
+        </table>
+
+        <h5>Xóa sản phẩm</h5>
+        <table id="delete" class="delete">
+          <!-- <tr>
+            <td>Sản phẩm</td>
+          </tr> -->
+          <tr></tr>
+        </table>
+
+        <h5>Sửa sản phẩm</h5>
+        <table>
+          <thead>
+            <form id="edit">
+              <th><input type="text" placeholder="url..." name="linkImg" /></th>
+              <th>
+                <input type="text" placeholder="Tiêu đề..." name="titleEdit" />
+              </th>
+              <th>
+                <input
+                  type="text"
+                  placeholder="Content..."
+                  name="contentEdit"
+                />
+              </th>
+              <th>
+                <button type="submit" class="btnCorectEdit">Xác nhận</button>
+              </th>
+            </form>
+          </thead>
+          <tbody id="editTable">
+            <!-- <tr>
+              <td>link ảnh</td>
+              <td>hehehehe</td>
+              <td>huhuhuh</td>
+              <td><button>Sửa</button></td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <script src="./admin.js"></script>
+  </body>
+</html>
